@@ -1,8 +1,13 @@
 import { createGlobalStyle } from 'styled-components';
 
-export const GlobalStyle = createGlobalStyle`
+interface IGobalStyle {
+  mode?: boolean;
+}
+
+export const GlobalStyle = createGlobalStyle<IGobalStyle>`
   :root {
     --color-dark: #000;
+    --color-gray: #eee9e9;
   } 
   
   *{
@@ -17,19 +22,19 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   .nav-bar-list li:hover {
-    background-color: white;
+    background-color: var(--color-gray);
   }
 
   .nav-bar-list li:hover span {
-    color: black
+    color: var(--color-dark);
   }
 
   .nav-bar-list li:hover svg {
-    color: black
+    color: var(--color-dark);
   }
 
   p, span, svg {
-    color: white;
+    color: var(--color-gray);
   }
 
   body {
