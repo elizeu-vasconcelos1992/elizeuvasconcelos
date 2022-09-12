@@ -8,7 +8,6 @@ export const StyledHeader = styled.header`
   align-items: center;
   justify-content: center;
   border-right: 2px solid white;
-  background-color: var(--color-black);
   gap: 2.5rem;
 
   img {

@@ -1,3 +1,4 @@
+import BackgroundAnimation from './components/Background';
 import { Container } from './components/Container';
 import Header from './components/Header';
 import Main from './components/Main';
@@ -8,6 +9,7 @@ function App() {
     <>
       <GlobalStyle />
       <Container>
+        <BackgroundAnimation />
         <Header />
         <Main />
       </Container>

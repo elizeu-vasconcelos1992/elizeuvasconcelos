@@ -25,11 +25,25 @@ export const StyledNav = styled.nav`
       svg {
         width: 2.5rem;
         height: 2.5rem;
+        pointer-events: none;
       }
 
       span {
         font-size: 1.3rem;
+        pointer-events: none;
       }
+    }
+  }
+
+  .current-effect {
+    background-color: var(--color-gray);
+
+    span {
+      color: var(--color-dark);
+    }
+
+    svg {
+      color: var(--color-dark);
     }
   }
 `;

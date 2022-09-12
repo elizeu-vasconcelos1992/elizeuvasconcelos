@@ -78,6 +78,7 @@ export const StyledAnimation = styled.div`
   justify-content: center;
   align-items: center;
   position: relative;
+  margin-bottom: -80px;
   animation: ${iconRjs} 20s linear infinite, ${displayVisible} 6s normal,
     ${opacityDiv} 10s 6s normal;
 
