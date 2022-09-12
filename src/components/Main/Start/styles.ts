@@ -58,6 +58,7 @@ export const StyledStart = styled.div`
   justify-content: center;
   align-items: center;
   font-size: 5rem;
+  margin-bottom: 80px;
 
   .div-start {
     width: 50%;
@@ -105,24 +106,29 @@ export const StyledStart = styled.div`
       display: flex;
       flex-direction: column;
       justify-content: flex-end;
+      position: relative;
 
       span {
         line-height: 100px;
-        font-size: 5rem;
         letter-spacing: 6px;
         overflow: hidden;
-        text-shadow: 4px 2px 5px rgba(150, 150, 150, 0.75);
       }
 
       .span-1 {
+        font-size: 5rem;
+        font-weight: 700;
         max-width: 215px;
+        text-shadow: 4px 2px 5px rgba(150, 150, 150, 0.75);
         animation: ${typing} 1s steps(120) 3s normal,
           ${displayvisible} 3s normal;
       }
 
       .span-2 {
+        font-size: 5rem;
+        font-weight: 700;
         max-width: 550px;
         width: 550px;
+        text-shadow: 4px 2px 5px rgba(150, 150, 150, 0.75);
         animation: ${typing2} 2s steps(120) 4s normal,
           ${displayvisible} 4s normal;
       }
