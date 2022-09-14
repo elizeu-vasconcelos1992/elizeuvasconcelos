@@ -1,8 +1,19 @@
 import styled from 'styled-components';
 
 export const BackDiv = styled.div`
-  background: #4e54c8;
-  background: var(--color-dark);
+  background-image: linear-gradient(
+    0deg,
+    hsl(0deg 0% 0%) 0%,
+    hsl(245deg 100% 2%) 11%,
+    hsl(245deg 100% 5%) 22%,
+    hsl(245deg 94% 7%) 33%,
+    hsl(245deg 96% 9%) 44%,
+    hsl(245deg 97% 12%) 56%,
+    hsl(245deg 97% 14%) 67%,
+    hsl(245deg 95% 16%) 78%,
+    hsl(245deg 96% 19%) 89%,
+    hsl(245deg 96% 21%) 100%
+  );
   width: inherit;
   height: inherit;
   position: absolute;

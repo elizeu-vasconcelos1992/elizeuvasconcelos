@@ -52,26 +52,29 @@ const glitch = keyframes`
 `;
 
 export const StyledStart = styled.div`
-  width: 98%;
-  height: 98%;
+  width: 100%;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 5rem;
   margin-bottom: 80px;
+  gap: 5rem;
 
   .div-start {
     width: 50%;
     display: flex;
+    position: absolute;
+    left: 25vw;
 
     .div-start-container {
-      width: 70px;
+      width: min-content;
       display: flex;
+      font-size: 7vw;
       flex-direction: column;
       position: relative;
       font-weight: bold;
       text-align: center;
-      line-height: 100px;
+      line-height: 7.5vw;
       text-shadow: 0.05em 0 0 #00fffc, -0.03em -0.04em 0 #fc00ff,
         0.025em 0.04em 0 #fffc00;
       animation: ${glitch} 725ms infinite, ${entry} 3s normal both;
@@ -79,7 +82,7 @@ export const StyledStart = styled.div`
       p {
         font-weight: bold;
         text-align: center;
-        line-height: 100px;
+        line-height: 7.5vw;
         position: absolute;
         top: 0;
         left: 0;
@@ -101,36 +104,95 @@ export const StyledStart = styled.div`
     }
 
     .div-start-container-2 {
-      width: 500px;
-      height: 300px;
+      width: inherit;
+      height: 22.8vw;
       display: flex;
       flex-direction: column;
       justify-content: flex-end;
       position: relative;
 
       span {
-        line-height: 100px;
+        line-height: 7.5vw;
         letter-spacing: 6px;
         overflow: hidden;
       }
 
       .span-1 {
-        font-size: 5rem;
+        font-size: 7vw;
         font-weight: 700;
-        max-width: 215px;
+        width: max-content;
         text-shadow: 4px 2px 5px rgba(150, 150, 150, 0.75);
         animation: ${typing} 1s steps(120) 3s normal,
           ${displayvisible} 3s normal;
       }
 
       .span-2 {
-        font-size: 5rem;
+        font-size: 7vw;
         font-weight: 700;
-        max-width: 550px;
-        width: 550px;
+        width: max-content;
         text-shadow: 4px 2px 5px rgba(150, 150, 150, 0.75);
         animation: ${typing2} 2s steps(120) 4s normal,
           ${displayvisible} 4s normal;
+      }
+    }
+  }
+
+  @media (max-width: 850px) {
+    .div-start {
+      left: 6vw;
+
+      .div-start-container {
+        font-size: 8vw;
+        line-height: 9vw;
+
+        p {
+          line-height: 9vw;
+        }
+      }
+
+      .div-start-container-2 {
+        height: 27.3vw;
+
+        span {
+          line-height: 9vw;
+        }
+
+        .span-1 {
+          font-size: 8vw;
+        }
+
+        .span-2 {
+          font-size: 8vw;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 550px) {
+    .div-start {
+      .div-start-container {
+        font-size: 12vw;
+        line-height: 13vw;
+
+        p {
+          line-height: 13vw;
+        }
+      }
+
+      .div-start-container-2 {
+        height: 39.5vw;
+
+        span {
+          line-height: 13vw;
+        }
+
+        .span-1 {
+          font-size: 12vw;
+        }
+
+        .span-2 {
+          font-size: 12vw;
+        }
       }
     }
   }
