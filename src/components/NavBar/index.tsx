@@ -27,7 +27,7 @@ function NavBar() {
           onClick={e => setEffect((e.target as HTMLLIElement).id)}
         >
           <FaUserAstronaut />
-          <span>Sobre Mim</span>
+          <span>Sobre</span>
         </li>
         <li
           id="2"
@@ -43,7 +43,7 @@ function NavBar() {
           onClick={e => setEffect((e.target as HTMLLIElement).id)}
         >
           <BsFillGearFill />
-          <span>Competências</span>
+          <span>Skills</span>
         </li>
         <li
           id="4"
