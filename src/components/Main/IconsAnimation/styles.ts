@@ -120,11 +120,6 @@ const displayVisible = keyframes`
 100% {visibility: collapse}
 `;
 
-const displayVisible_2 = keyframes`
-0% {visibility: collapse}
-100% {visibility: collapse}
-`;
-
 const opacityDiv = keyframes`
 0% {opacity: 0}
 100% {opacity: 0.5}
