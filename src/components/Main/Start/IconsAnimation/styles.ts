@@ -210,7 +210,8 @@ export const StyledAnimation = styled.div`
     left: 35vw;
     opacity: 0.25;
     z-index: -1;
-    animation: ${displayVisible} 6s normal, ${opacityDiv_2} 10s 6s normal;
+    animation: ${iconRjs} 20s linear infinite, ${displayVisible} 6s normal,
+      ${opacityDiv_2} 10s 6s normal;
 
     svg {
       position: absolute;

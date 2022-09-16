@@ -1,5 +1,5 @@
-import FrontEnd from '../../FrontEndText';
-import IconsAnimation from '../IconsAnimation';
+import FrontEnd from './FrontEndText';
+import IconsAnimation from './IconsAnimation';
 import { StyledStart } from './styles';
 
 function Start() {

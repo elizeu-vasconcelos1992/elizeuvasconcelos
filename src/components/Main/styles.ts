@@ -10,6 +10,7 @@ export const StyledMain = styled.main`
 
   @media (max-width: 850px) {
     width: 100vw;
+    min-height: 85vh;
     height: 85%;
   }
 `;

@@ -7,13 +7,7 @@ export const StyledHeader = styled.header`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border-right: 2px solid white;
-  gap: 1rem;
-
-  img {
-    width: 30vh;
-    border-radius: 50px;
-  }
+  border-right: 2px solid var(--color-gray);
 
   @media (max-width: 850px) {
     width: 100vw;
