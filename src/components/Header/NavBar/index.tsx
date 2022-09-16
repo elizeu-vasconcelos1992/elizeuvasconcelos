@@ -5,10 +5,12 @@ import { TbCertificate } from 'react-icons/tb';
 import { AiFillFolderOpen } from 'react-icons/ai';
 import { MdEmail } from 'react-icons/md';
 import { StyledNav } from './styles';
-import { useState } from 'react';
+import { useContext, useState } from 'react';
+import { UserContext } from '../../context';
 
 function NavBar() {
   const [effect, setEffect] = useState<string>('0');
+  const { dispatch } = useContext(UserContext);
 
   return (
     <StyledNav>
@@ -16,7 +18,10 @@ function NavBar() {
         <li
           id="0"
           className={effect === '0' ? 'current-effect' : 'null'}
-          onClick={e => setEffect((e.target as HTMLLIElement).id)}
+          onClick={e => {
+            setEffect((e.target as HTMLLIElement).id);
+            dispatch('home');
+          }}
         >
           <ImHome />
           <span>Início</span>
@@ -24,7 +29,10 @@ function NavBar() {
         <li
           id="1"
           className={effect === '1' ? 'current-effect' : 'null'}
-          onClick={e => setEffect((e.target as HTMLLIElement).id)}
+          onClick={e => {
+            setEffect((e.target as HTMLLIElement).id);
+            dispatch('about');
+          }}
         >
           <FaUserAstronaut />
           <span>Sobre</span>

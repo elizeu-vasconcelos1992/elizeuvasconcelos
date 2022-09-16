@@ -13,11 +13,11 @@ export const StyledNav = styled.nav`
 
     li {
       width: 100%;
-      height: 3rem;
+      height: 6rem;
       display: flex;
       justify-content: flex-start;
       align-items: center;
-      padding: 0 0 0 3rem;
+      padding: 0 0 0 4rem;
       gap: 2vh;
       cursor: pointer;
       transition: 0.5s;
@@ -49,14 +49,14 @@ export const StyledNav = styled.nav`
 
   @media (max-width: 1025px) {
     width: 100%;
-    height: 100%;
+    padding: 0.5rem 0 0.5rem 0;
 
     ul {
       li {
-        padding: 0 0 0 1rem;
+        padding: 0 0 0 1.75rem;
 
         span {
-          font-size: calc(1.5vw + 2px);
+          font-size: calc(1.5vw + 3px);
         }
       }
     }

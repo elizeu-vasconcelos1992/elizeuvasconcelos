@@ -1,5 +1,6 @@
-import BackgroundAnimation from './components/Background';
+import BackgroundAnimation from './components/Container/Background';
 import { Container } from './components/Container';
+import UserProvider from './components/context';
 import Header from './components/Header';
 import Main from './components/Main';
 import { GlobalStyle } from './styles/global';
@@ -7,12 +8,14 @@ import { GlobalStyle } from './styles/global';
 function App() {
   return (
     <>
-      <GlobalStyle />
-      <Container>
-        <BackgroundAnimation />
-        <Header />
-        <Main />
-      </Container>
+      <UserProvider>
+        <GlobalStyle />
+        <Container>
+          <BackgroundAnimation />
+          <Header />
+          <Main />
+        </Container>
+      </UserProvider>
     </>
   );
 }
