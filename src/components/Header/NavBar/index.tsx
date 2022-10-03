@@ -64,7 +64,10 @@ function NavBar() {
         <li
           id="5"
           className={effect === '5' ? 'current-effect' : 'null'}
-          onClick={e => setEffect((e.target as HTMLLIElement).id)}
+          onClick={e => {
+            setEffect((e.target as HTMLLIElement).id);
+            dispatch('contact');
+          }}
         >
           <MdEmail />
           <span>Contatos</span>
