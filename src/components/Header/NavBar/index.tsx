@@ -56,7 +56,10 @@ function NavBar() {
         <li
           id="4"
           className={effect === '4' ? 'current-effect' : 'null'}
-          onClick={e => setEffect((e.target as HTMLLIElement).id)}
+          onClick={e => {
+            setEffect((e.target as HTMLLIElement).id);
+            dispatch('portfolio');
+          }}
         >
           <AiFillFolderOpen />
           <span>Portfólio</span>
