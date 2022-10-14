@@ -22,7 +22,7 @@ export const StyledAbout = styled.div`
 
   .about-spacer {
     width: 1px;
-    height: 85vh;
+    height: 70vh;
     border: 1px solid var(--color-gray);
     background-color: var(--color-gray);
   }
@@ -76,7 +76,7 @@ export const StyledAbout = styled.div`
     }
 
     .about-spacer {
-      width: 80vw;
+      width: 70vw;
       height: 1px;
     }
 

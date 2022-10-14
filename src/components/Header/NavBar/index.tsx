@@ -56,7 +56,10 @@ function NavBar() {
         <li
           id="4"
           className={effect === '4' ? 'current-effect' : 'null'}
-          onClick={e => setEffect((e.target as HTMLLIElement).id)}
+          onClick={e => {
+            setEffect((e.target as HTMLLIElement).id);
+            dispatch('portfolio');
+          }}
         >
           <AiFillFolderOpen />
           <span>Portfólio</span>
@@ -64,7 +67,10 @@ function NavBar() {
         <li
           id="5"
           className={effect === '5' ? 'current-effect' : 'null'}
-          onClick={e => setEffect((e.target as HTMLLIElement).id)}
+          onClick={e => {
+            setEffect((e.target as HTMLLIElement).id);
+            dispatch('contact');
+          }}
         >
           <MdEmail />
           <span>Contatos</span>
