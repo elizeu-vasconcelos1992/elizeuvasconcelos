@@ -40,10 +40,13 @@ function NavBar() {
         <li
           id="2"
           className={effect === '2' ? 'current-effect' : 'null'}
-          onClick={e => setEffect((e.target as HTMLLIElement).id)}
+          onClick={e => {
+            setEffect((e.target as HTMLLIElement).id);
+            dispatch('resume');
+          }}
         >
           <TbCertificate />
-          <span>Formação</span>
+          <span>Currículo</span>
         </li>
         <li
           id="3"

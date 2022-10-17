@@ -4,6 +4,7 @@ import Contact from '../Main/Contact';
 import Start from '../Main/Start';
 import emailjs from '@emailjs/browser';
 import Portfolio from '../Main/Portfolio';
+import Resume from '../Main/Resume';
 
 interface IUserProps {
   children: ReactNode;
@@ -40,6 +41,9 @@ export default function UserProvider({ children }: IUserProps) {
 
       case 'portfolio':
         return <Portfolio />;
+
+      case 'resume':
+        return <Resume />;
 
       default:
         <Start />;
