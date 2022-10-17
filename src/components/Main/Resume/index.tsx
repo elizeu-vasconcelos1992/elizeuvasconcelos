@@ -59,11 +59,11 @@ function Resume() {
           <h3>Formação</h3>
           <p>
             <strong>Sistemas para Internet</strong> | Centro Universitário
-            Leonardo Da Vinci | 08/22 à 08/24
+            Leonardo Da Vinci | 08/22 a 08/24
           </p>
           <p>
             <strong>Desenvolvedor Full Stack</strong> | Kenzie Academy Brasil |
-            03/22 à 03/23
+            03/22 a 03/23
           </p>
           <p>
             {' '}
