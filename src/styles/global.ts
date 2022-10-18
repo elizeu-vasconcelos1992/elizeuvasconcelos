@@ -33,6 +33,18 @@ export const GlobalStyle = createGlobalStyle<IGobalStyle>`
     color: var(--color-dark);
   }
 
+  .nav-bar-list a:hover {
+    background-color: var(--color-gray);
+  }
+
+  .nav-bar-list a:hover span {
+    color: var(--color-dark);
+  }
+
+  .nav-bar-list a:hover svg {
+    color: var(--color-dark);
+  }
+
   p, span, svg {
     color: var(--color-gray);
   }

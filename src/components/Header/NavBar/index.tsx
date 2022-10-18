@@ -1,12 +1,13 @@
 import { FaUserAstronaut } from 'react-icons/fa';
 import { ImHome } from 'react-icons/im';
-import { BsFillGearFill } from 'react-icons/bs';
 import { TbCertificate } from 'react-icons/tb';
+import { MdDownload } from 'react-icons/md';
 import { AiFillFolderOpen } from 'react-icons/ai';
 import { MdEmail } from 'react-icons/md';
 import { StyledNav } from './styles';
 import { useContext, useState } from 'react';
 import { UserContext } from '../../context';
+import curriculo from '../../../docs/curriculo.pdf';
 
 function NavBar() {
   const [effect, setEffect] = useState<string>('0');
@@ -51,14 +52,6 @@ function NavBar() {
         <li
           id="3"
           className={effect === '3' ? 'current-effect' : 'null'}
-          onClick={e => setEffect((e.target as HTMLLIElement).id)}
-        >
-          <BsFillGearFill />
-          <span>Skills</span>
-        </li>
-        <li
-          id="4"
-          className={effect === '4' ? 'current-effect' : 'null'}
           onClick={e => {
             setEffect((e.target as HTMLLIElement).id);
             dispatch('portfolio');
@@ -68,8 +61,8 @@ function NavBar() {
           <span>Portfólio</span>
         </li>
         <li
-          id="5"
-          className={effect === '5' ? 'current-effect' : 'null'}
+          id="4"
+          className={effect === '4' ? 'current-effect' : 'null'}
           onClick={e => {
             setEffect((e.target as HTMLLIElement).id);
             dispatch('contact');
@@ -78,6 +71,18 @@ function NavBar() {
           <MdEmail />
           <span>Contatos</span>
         </li>
+        <a
+          href={curriculo}
+          download
+          id="5"
+          className={effect === '5' ? 'current-effect' : 'null'}
+          onClick={e => {
+            setEffect((e.target as HTMLLIElement).id);
+          }}
+        >
+          <MdDownload />
+          <span>Baixar CV</span>
+        </a>
       </ul>
     </StyledNav>
   );

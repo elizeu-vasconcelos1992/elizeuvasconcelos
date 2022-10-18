@@ -24,7 +24,6 @@ export const StyledResume = styled.div`
     color: rgba(255, 255, 255, 0.85);
     border: 1px solid transparent;
     background-color: #104e8b;
-
     cursor: pointer;
     transition: 0.5s;
 
@@ -35,6 +34,7 @@ export const StyledResume = styled.div`
 
   h3 {
     font-weight: 500;
+    text-align: center;
   }
 
   h4 {
@@ -51,16 +51,28 @@ export const StyledResume = styled.div`
     flex-direction: column;
     gap: 1rem;
     margin: 0 auto;
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 1rem;
-    border-radius: 2%;
+    text-align: center;
   }
 
+  .person-infos,
   .objective,
-  .formation {
-    border-bottom: 1px solid white;
-    border-top: 1px solid white;
-    padding: 1rem 0 1rem 0;
+  .formation,
+  .skills,
+  .experiences {
+    background-color: rgba(0, 0, 0, 0.75);
+    padding: 1rem;
+    border-radius: 0.75rem;
+  }
+
+  .objective {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .formation,
+  .experiences {
+    text-align: justify;
   }
 
   .skills {
