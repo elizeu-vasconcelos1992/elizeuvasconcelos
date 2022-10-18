@@ -85,7 +85,9 @@ function Resume() {
           <div>
             <p>
               {' '}
-              <strong>Consultor e Engenheiro Ambiental</strong>
+              <strong>
+                Consultor e Engenheiro Ambiental - Profissional Liberal
+              </strong>
             </p>
             <p>
               Descrição: Realização de estudos ambientais para fins de
@@ -94,6 +96,17 @@ function Resume() {
               comunitárias.
             </p>
             Período: 2016 à 2021
+          </div>
+          <div>
+            <p>
+              {' '}
+              <strong>Consultor Ambiental - Empresa LogicAmbiental</strong>
+            </p>
+            <p>
+              Descrição: Realização de estudos ambientais e de engenharia,
+              elaboração de materiais didáticos e administrador do sistema web.
+            </p>
+            Período: 2016 à 2018
           </div>
         </div>
       </div>
